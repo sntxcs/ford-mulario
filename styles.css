@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/ford.jpg");
+    background-repeat: no-repeat;     /* no repetir */
+    background-size: cover;           /* la imagen cubre toda la pantalla */
+    background-position: center;      /* centrada */
+    background-attachment: fixed;     /* opcional: efecto estático */
+}
+
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 25px; /* Reducir padding */
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 22px; /* Más pequeño */
+    text-shadow: 0 2px 4px rgba(170, 170, 170, 0);
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reducí el espacio entre campos */
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio mínimo entre label e input */
+}
+
+label {
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap; /* Evita que se rompa en dos líneas */
+    margin-bottom: 0; /* Elimina margen inferior */
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-enviar {
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    padding: 12px; /* Reducí el padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Texto más pequeño */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px; /* Reducí este margen */
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para validación */
+input:invalid {
+    border-color: #dc3545;
+}
+
+input:valid {
+    border-color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
