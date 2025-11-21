@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("img/ford.jpg");
+    background-image: url("ford.jpg");
     background-repeat: no-repeat;     /* no repetir */
     background-size: cover;           /* la imagen cubre toda la pantalla */
     background-position: center;      /* centrada */
@@ -106,4 +106,5 @@ input:valid {
         margin: 20px;
         padding: 20px;
     }
+
 }
